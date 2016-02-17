@@ -1,0 +1,12 @@
+language: c
+compiler:
+  - clang
+  - gcc
+os:
+ - linux
+ - osx
+script:
+ - autoreconf -fiv
+ - ./configure
+ - make
+ - make check
